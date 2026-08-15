@@ -50,3 +50,12 @@ let sum2 = nums1.reduce((acc, ele) => {
   return acc * ele;
 });
 console.log(sum2);
+
+let unsorterd = [5, 2, 4, 1, 3];
+
+let acc = unsorterd.sort((a, b) => {
+  return a - b;
+});
+console.log(acc);
+
+
