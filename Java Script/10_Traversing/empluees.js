@@ -164,11 +164,46 @@ console.log("id no 7 emp");
 console.log(emp7);
 
 // 8. Find the employee who has the highest salary.
+let highestsal = employees.reduce((acc, emp) => {
+  if (emp.salary > acc.salary) {
+    return emp;
+  } else {
+    return acc;
+  }
+});
+console.log("Highest salar is ");
+
+console.log(highestsal.name);
 
 // 9. Find the employee who has the most years of experience.
+let mostExp = employees.reduce((acc, emp) => {
+  if (emp.experience > acc.experience) {
+    return emp;
+  } else {
+    return acc;
+  }
+});
+console.log("Highest experince is ");
+console.log(mostExp.name);
 
 // 10. Get the names of employees who have more than 5 years of experience.
 
+let expmorefive = employees.filter((emp)=>{
+  return emp.experience>5
+}).map((emp)=> {
+  return emp.name
+})
+console.log(expmorefive);
+
 // 11. Get all employees who know JavaScript.
 
+let knowjs = employees.filter((emp)=>{
+  return emp.skills.includes("JavaScript")
+}).map((emp)=>{
+  return emp.name
+})
+console.log(knowjs);
+
+
 // 12. Find out whether there is at least one employee who earns more than ₹1,00,000.
+let 
