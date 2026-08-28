@@ -188,22 +188,28 @@ console.log(mostExp.name);
 
 // 10. Get the names of employees who have more than 5 years of experience.
 
-let expmorefive = employees.filter((emp)=>{
-  return emp.experience>5
-}).map((emp)=> {
-  return emp.name
-})
+let expmorefive = employees
+  .filter((emp) => {
+    return emp.experience > 5;
+  })
+  .map((emp) => {
+    return emp.name;
+  });
 console.log(expmorefive);
 
 // 11. Get all employees who know JavaScript.
 
-let knowjs = employees.filter((emp)=>{
-  return emp.skills.includes("JavaScript")
-}).map((emp)=>{
-  return emp.name
-})
+let knowjs = employees
+  .filter((emp) => {
+    return emp.skills.includes("JavaScript");
+  })
+  .map((emp) => {
+    return emp.name;
+  });
 console.log(knowjs);
 
-
 // 12. Find out whether there is at least one employee who earns more than ₹1,00,000.
-let 
+let find = employees.some((emp) => {
+  return emp.salary > 100000;
+});
+console.log(find);
