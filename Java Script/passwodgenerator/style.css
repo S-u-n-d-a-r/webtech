@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(lightgray, lightblue, lightyellow);
+  min-height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  width: 60%;
+  text-align: center;
+}
+
+h1 {
+font-size: 50px;
+  margin-bottom: 50px;
+  color: #222;
+  text-transform: capitalize;
+}
+
+.inner {
+  background-color: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Password input section */
+header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+header input {
+  flex: 1;
+  height: 45px;
+  padding: 0 12px;
+
+  border: 1px solid #ccc;
+  border-radius: 6px;
+
+  font-size: 16px;
+  outline: none;
+}
+
+header input:focus {
+  border-color: #007bff;
+}
+
+header img {
+  width: 35px;
+  height: 35px;
+  object-fit: contain;
+}
+
+/* Buttons section */
+footer {
+  display: flex;
+  gap: 10px;
+}
+
+footer button {
+  flex: 1;
+  height: 45px;
+
+  border: none;
+  border-radius: 10px;
+
+  background-color:lightblue;
+  color: white;
+
+  font-size: 16px   ;
+  font-weight: bold;
+
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+footer button:hover {
+  background-color: #0056b3;
+}
+
+footer button:active {
+  transform: scale(0.97);
+}

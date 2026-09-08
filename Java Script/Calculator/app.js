@@ -2,7 +2,8 @@ let addDigits = (digit) => {
   console.log(digit);
   let input = document.querySelector("input");
 
-  input.value += digit;
+  if (input.value == 0) input.value = digit;
+  else input.value += digit;
 };
 let calculate = () => {
   let input = document.querySelector("input");
@@ -18,4 +19,11 @@ let clean = () => {
   let input = document.querySelector("input");
 
   input.value = "";
+};
+let back = () => {
+  let input = document.querySelector("input");
+  let exp = input.value;
+
+  let updatedExp = exp.slice(0, -1);
+  input.value = updatedExp;
 };

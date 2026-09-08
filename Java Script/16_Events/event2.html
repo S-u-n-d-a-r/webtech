@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event in Javascript</title>
+    <style>
+      * {
+        border: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      button {
+        padding: 10px;
+        border-radius: 10px;
+      }
+      h1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      ol {
+        width: 60%;
+        margin: auto;
+        list-style: none;
+        background-color: lightsteelblue;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+        border-radius: 10px;
+      }
+      article {
+        background-color: lightblue;
+        height: 400px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 25px;
+        flex-direction: column;
+      }
+      article > input {
+        padding: 10px;
+        font-size: 19px;
+        font-weight: bold;
+        letter-spacing: 1.4px;
+      }
+      article .box {
+        width: 500px;
+        height: 200px;
+        background-color: white;
+        border-radius: 20px;
+        box-shadow: 0px 4px 8px black;
+        padding: 20px;
+        font-size: 19px;
+        font-weight: bold;
+      }
+      section {
+        display: flex;
+        justify-content: center;
+        gap: 40px;
+        margin: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Event listener in JavaScript</h1>
+      <button id="btn1">get Started</button>
+      <button id="btn2">button2</button>
+    </header>
+    <ol>
+      <li>SQL</li>
+      <li>Java</li>
+      <li>python</li>
+      <li>Web Tech</li>
+      <li>ad java</li>
+    </ol>
+    <section>
+      <button onclick="f1()" onclick="f2()">button 3</button>
+      <button id="btn4">button 4</button>
+    </section>
+
+    <article>
+      <h1>Keyboard event</h1>
+      <input type="text" placeholder="write something" />
+      <div class="box"></div>
+    </article>
+
+    <script src="./event2.js"></script>
+  </body>
+</html>
+
+
+<div onmouseover="fun1()" onmouseout="fun2()">
+    <h2>applying multiple events</h2>
+</div>
